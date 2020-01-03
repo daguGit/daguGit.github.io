@@ -400,6 +400,7 @@ EXPOSE <port>[/<protocol>] [<port>[/<protocol>]...]
 
 EXPOSE可以一次性指定多个端口，例如： EXPOSE 80/tcp 80/udp
 
+
 ##### 5.2.4.9.      ENV
 
 用来给镜像定义所需要的环境变量，并且可以被Dockerﬁle文件中位于其后的其他指令(如ENV、ADD、COPY等)所调用，调用格式：$variable_name或者${variable_name}
@@ -416,6 +417,7 @@ ENV <key>=<value>...
 第二种格式可以一次设置多个变量，如果 <value> 当中有空格可以使用\进行转义或者对 <value> 加引号进行标识；
 
 另外\也可以用来续行
+
 
 ##### 5.2.4.10.     ARG
 
